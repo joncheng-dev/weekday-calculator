@@ -4,7 +4,25 @@
     <title>Weekday Calculator</title>
   </head>
   <body>
-    <h1>Weekday Calculator</h1>
-    <h4>Enter a date, and see what day of the week it is.</h4>
+    <div class="container">
+      <h1>Weekday Calculator</h1>
+      <h4>Enter a date, and see what day of the week it is.</h4>
+      <br />
+      <form>
+        <label for="year">Enter Year (Between 0 and 3000): </label>
+        <input type="number" id="year" min="0" max="3000" />
+        <br />
+        <br />
+        <label for="month">Enter Month (Between 1 and 12): </label>
+        <input type="number" id="month" min="1" max="12" />
+        <br />
+        <br />
+        <label for="day">Enter Day (Between 1 and 31): </label>
+        <input type="number" id="day" min="1" max="31" />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,8 +1,10 @@
 import Date from "./../src/calculator.js";
 
 describe("Date", () => {
-  test("should correctly return the date user entered", () => {
-    const dateTest = new Date("May 30th, 2022");
-    expect(dateTest.enteredDate).toEqual("May 30th, 2022");
+  test("should correctly return the year, month, and day passed in", () => {
+    const dateTest = new Date(2022, 5, 31);
+    expect(dateTest.enteredYear).toEqual(2022);
+    expect(dateTest.enteredMonth).toEqual(5);
+    expect(dateTest.enteredDay).toEqual(31);
   });
 });

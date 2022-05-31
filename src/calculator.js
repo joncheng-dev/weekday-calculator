@@ -1,5 +1,7 @@
-export default function Date(userEntered) {
-  this.enteredDate = userEntered;
+export default function Date(year, month, day) {
+  this.enteredYear = year;
+  this.enteredMonth = month;
+  this.enteredDay = day;
 }
 
 Date.prototype.calculateDay = function () {
