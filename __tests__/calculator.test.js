@@ -7,4 +7,8 @@ describe("Date", () => {
     expect(dateTest.enteredMonth).toEqual(5);
     expect(dateTest.enteredDay).toEqual(31);
   });
+  test("method calculateDay should correctly return a day of week", () => {
+    const dateTest = new Date(2022, 5, 31);
+    expect(dateTest.calculateDay()).toEqual("I can't answer that yet.");
+  });
 });
