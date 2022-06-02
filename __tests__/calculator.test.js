@@ -12,3 +12,12 @@ describe("Date", () => {
     expect(dateTest.calculateDay()).toEqual("I can't answer that yet.");
   });
 });
+
+describe("Date method zellerDateMonth", () => {
+  test("zellerDateMonth should correctly return the Date object's month & day", () => {
+    const dateTest = new Date(2022, 5, 31);
+    expect(dateTest.zellerDateMonth()).toEqual(
+      "The month is 5 and the day is 31."
+    );
+  });
+});
