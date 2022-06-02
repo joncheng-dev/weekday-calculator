@@ -5,11 +5,15 @@ export default function Date(year, month, day) {
 }
 
 Date.prototype.calculateDay = function () {
-  return "I can't answer that yet.";
-};
-
-Date.prototype.zellerDateMonth = function () {
-  const month = this.enteredMonth;
-  const day = this.enteredDay;
-  return "The month is " + month + " and the day is " + day + ".";
+  let k = this.enteredYear % 100;
+  let j = Math.floor(this.enteredYear / 100);
+  let h =
+    (this.enteredDay +
+      Math.floor((13 * (this.enteredMonth + 1)) / 5) +
+      k +
+      Math.floor(k / 4) +
+      Math.floor(j / 4) -
+      2 * j) %
+    7;
+  return h;
 };
