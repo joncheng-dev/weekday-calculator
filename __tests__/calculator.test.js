@@ -11,4 +11,16 @@ describe("Date", () => {
     const dateTest = new Date(1998, 4, 8);
     expect(dateTest.calculateDay()).toEqual(4);
   });
+  test("method calculateDay should correctly return '5'", () => {
+    const dateTest = new Date(1763, 11, 24);
+    expect(dateTest.calculateDay()).toEqual(5);
+  });
+  test("method calculateDay should correctly return '3'", () => {
+    const dateTest = new Date(2022, 5, 31);
+    expect(dateTest.calculateDay()).toEqual(3);
+  });
+  test("method calculateDay should correctly return '3'", () => {
+    const dateTest = new Date(2022, 6, 2);
+    expect(dateTest.calculateDay()).toEqual(5);
+  });
 });
